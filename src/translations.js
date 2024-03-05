@@ -1,4 +1,7 @@
+const currentYear = new Date().getFullYear();
+
 const translations = {
+  
   fr: {
     home: {
       title: "Experts en conception de plans pour maisons individuelles et projets de construction dans le monde",
@@ -18,7 +21,7 @@ const translations = {
       about: "À Propos",
       services: "Services",
       projects: "Réalisations",
-      copyright: "© TechniPlans. Tous droits réservés 2024."
+      copyright: `© TechniPlans. Tous droits réservés ${currentYear}.`
     },
     realisations: {
       title: "Mes réalisations",
@@ -92,7 +95,7 @@ const translations = {
       about: "About",
       services: "Services",
       projects: "Projects",
-      copyright: "© TechniPlans. All rights reserved 2024."
+      copyright: `© TechniPlans. All rights reserved ${currentYear}.`
     },
     contact: {
       title: "An idea? A project?",
