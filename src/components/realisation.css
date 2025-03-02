@@ -1,0 +1,155 @@
+/* Section et conteneur principal */
+.realisations-section {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+}
+
+.realisations-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Slider */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-mask {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+/* Lien et conteneur image */
+.slider-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.slider-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Hauteur fixe pour toutes les images */
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay pour effet d'ombre */
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Texte en bas */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Texte en overlay en blanc, centré et en bas de l'image */
+.slider-text {
+  text-align: center;
+  color: #fff;
+}
+
+.slider-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.slider-category {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Conteneur des flèches (positionné en dessous des images) */
+.slider-arrows-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Flèches de navigation */
+.slider-arrow {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #fff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.arrow-icon {
+  max-width: 55%;
+  padding: 1px;
+}
+
+/* Message vide */
+.empty-message {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+
+/* Petit écran (<600px) */
+@media (max-width: 599px) {
+  .slider-image-container {
+    height: 300px;
+  }
+  .slider-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Écran moyen (600px - 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .slider-image-container {
+    height: 350px;
+  }
+  .slider-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* Grand écran (>=900px) */
+@media (min-width: 900px) {
+  .slider-image-container {
+    height: 400px;
+  }
+  .slider-title {
+    font-size: 1.8rem;
+  }
+}
