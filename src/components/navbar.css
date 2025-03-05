@@ -1,0 +1,126 @@
+.navMenu {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  max-height: 64px;
+  /* Supprime height: auto; */
+  background-color: rgba(0, 0, 0, 0.685);  
+}
+
+.navContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-height: 64px;
+  margin: auto;
+}
+.navBar {
+  position: absolute;
+  /* Pour ne pas perturber le flex de .navMenu */
+  top: 64px;
+  /* Place le menu sous la barre de navigation */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.685);
+  height: 100vh;
+  z-index: 1;
+  /* Laisse un z-index inférieur à .burgerBtn */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-110%);
+  /* Masque le menu au départ */
+  transition: transform 1s ease-in-out;
+}
+
+.navBar.open {
+  /* Ajoute une classe pour afficher le menu */
+  transform: translateY(0);
+}
+
+.navBar ul {
+  gap: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+}
+
+.navBar li {
+  opacity: 0;
+  transform: translateY(-10px);
+  /* Légère animation vers le bas */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.navBar.open li {
+  opacity: 1;
+  transform: translateY(0);
+  font-weight: 900;
+}
+
+.navBar li,
+.navBar a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: uppercase
+}
+
+.navBar li:last-child a {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+
+
+.navBar li:last-child:hover a {
+  background-color: #fff;
+  transform: scale(1.05);
+  color: #000;
+}
+
+.navBar li a:hover {
+  border-bottom: 4px solid white;
+}
+
+
+/* Délais de 3ms entre chaque lien */
+.navBar.open li:nth-child(1) {
+  transition-delay: 1s;
+  /* Attente de 1s (temps de transition de .navBar) */
+}
+
+.navBar.open li:nth-child(2) {
+  transition-delay: 1.03s;
+}
+
+.navBar.open li:nth-child(3) {
+  transition-delay: 1.06s;
+}
+
+.navBar.open li:nth-child(4) {
+  transition-delay: 1.09s;
+}
+
+.navBar.open li:nth-child(5) {
+  transition-delay: 1.12s;
+}
+
+.navBar.open li:nth-child(6) {
+  transition-delay: 1.15s;
+}
+
+.burgerBtn {
+  z-index: 3;
+  cursor: pointer;
+}
+
+.burgerBtn img {
+  width: 30px;
+  height: 30px;
+}

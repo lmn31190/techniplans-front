@@ -167,19 +167,7 @@ a {
   transition: color .3s;
 }
 
-ul {
-  grid-row-gap: 15px;
-  background-color: var(--primary-dark);
-  color: var(--primary-dark);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  display: flex;
-}
+
 
 li {
   align-items: center;
