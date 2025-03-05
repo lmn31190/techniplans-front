@@ -128,7 +128,6 @@ const Gallery = ({ images = [] }) => {
               />
               <ImageListItemBar
                 position="below"
-                title={`Image ${item.order + 1}`}
               />
             </ImageListItem>
           ))}
