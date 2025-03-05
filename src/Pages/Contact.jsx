@@ -78,11 +78,11 @@ const Contact = () => {
                       <div className="spacer-medium" />
 
                       <div className="form_radio-columns is-1">
-                        <div className='mail' onClick={() => window.location.href = "https://form.jotform.com/250292234622349"}>
+                        <div className='mail' onClick={() => window.location.href = "https://form.jotform.com/250635438250353"}>
                           <img src="/images/mail.jpeg" alt="Contact" />
                           <span>Contact</span>
                         </div>
-                        <div className='devis' onClick={() => window.location.href = "https://form.jotform.com/250534609441050"}>
+                        <div className='devis' onClick={() => window.location.href = "https://form.jotform.com/250635009658359"}>
                           <img src="/images/devis.png" alt="Devis" />
                           <span>Devis</span>
                         </div>
