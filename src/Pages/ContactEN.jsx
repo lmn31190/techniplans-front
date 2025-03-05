@@ -74,11 +74,11 @@ const ContactEN = () => {
                       <div className="spacer-medium" />
 
                       <div className="form_radio-columns is-1">
-                        <div className='mail' onClick={() => window.location.href = "https://form.jotform.com/250535082088356"}>
+                        <div className='mail' onClick={() => window.location.href = "https://form.jotform.com/250635097936365"}>
                           <img src="/images/mail.jpeg" alt="Contact" />
                           <span>Contact</span>
                         </div>
-                        <div className='devis' onClick={() => window.location.href = "https://form.jotform.com/250534803494357"}>
+                        <div className='devis' onClick={() => window.location.href = "https://form.jotform.com/250635510652350"}>
                           <img src="/images/devis.png" alt="Quote" />
                           <span>Quote</span>
                         </div>
