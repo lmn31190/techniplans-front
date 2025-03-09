@@ -8,6 +8,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactEN from './Pages/ContactEN';
 import { LanguageProvider, LanguageContext } from './contexts/LanguageContext';
+import MentionsLegales from './Pages/MentionsLegales';
+import LegalNotices from './Pages/LegalNotices';
 
 const AppContent = () => {
   const location = useLocation();
@@ -15,10 +17,11 @@ const AppContent = () => {
   const isErrorPage = location.pathname === "/404";
   const isContactPage = location.pathname === "/contact";
   const isLanguagePage = location.pathname === "/language";
+  const isLegacyPage = location.pathname === "/legacy";
 
   return (
     <div>
-      {!isErrorPage && !isContactPage && !isLanguagePage && <Navbar language={language} />}
+      {!isErrorPage && !isContactPage && !isLanguagePage && !isLegacyPage && <Navbar language={language} />}
 
       <Routes>
         <Route index element={<Home key={language} language={language} />} />
@@ -26,9 +29,10 @@ const AppContent = () => {
         <Route path='/realisation/:id' element={<RealisationDetail language={language} key={language} />} />
         <Route path='/404' element={<Error key={language} />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route path="/legacy" element={language === "fr" ? <MentionsLegales key={language} /> : <LegalNotices key={language} />} />
       </Routes>
 
-      {!isErrorPage && !isContactPage && !isLanguagePage && <Footer language={language} />}
+      {!isErrorPage && !isContactPage && !isLanguagePage && !isLegacyPage && <Footer language={language} />}
     </div>
   );
 };

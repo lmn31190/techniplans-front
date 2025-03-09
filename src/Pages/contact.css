@@ -1,14 +1,5 @@
 /* ---------- Base Styles ---------- */
-.returnMenu {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
 
-.returnMenu:hover {
-  text-decoration: underline;
-}
 
 /* ---------- Slide-Banner (texte de gauche) ---------- */
 .slide-banner .banner-content .quote-wrap .heading-h3 {

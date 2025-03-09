@@ -15,13 +15,17 @@ const translations = {
       projects: "Réalisations",
       contact: "Contact"
     },
+    returnHome: {
+      text: "Retourner à l'accueil"
+    },
     footer: {
       slogan: "LA MAISON DE VOS RÊVES",
       contact: "Contact",
       about: "À Propos",
       services: "Services",
       projects: "Réalisations",
-      copyright: `© TechniPlans. Tous droits réservés ${currentYear}.`
+      copyright: `© TechniPlans. Tous droits réservés ${currentYear}.`,
+      legacy: "Mention Légals",
     },
     realisations: {
       title: "Mes réalisations",
@@ -89,13 +93,17 @@ const translations = {
       projects: "Projects",
       contact: "Contact"
     },
+    returnHome: {
+      text : "Return to Home"
+    },
     footer: {
       slogan: "THE HOUSE OF YOUR DREAMS",
       contact: "Contact",
       about: "About",
       services: "Services",
       projects: "Projects",
-      copyright: `© TechniPlans. All rights reserved ${currentYear}.`
+      copyright: `© TechniPlans. All rights reserved ${currentYear}.`,
+      legacy: "Terms & Conditions",
     },
     contact: {
       title: "An idea? A project?",

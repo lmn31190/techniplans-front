@@ -1,0 +1,65 @@
+.mentions-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.mentions-container {
+  max-width: 900px;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mentions-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mentions-section {
+  margin-bottom: 30px;
+}
+
+.mentions-heading {
+  font-size: 1.5rem;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.mentions-subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+.mentions-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.mentions-list {
+  padding-left: 20px;
+}
+
+.mentions-list li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.mentions-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.mentions-link:hover {
+  text-decoration: underline;
+}

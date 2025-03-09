@@ -120,6 +120,14 @@ const Footer = ({language}) => {
               <div className="footer-copyright">
               {translations[language].footer.copyright}
               </div>
+              <a
+                data-w-id="b4358706-67f6-2151-ca27-e44fa8542233"
+                href="/legacy"
+                className="footer-link w-inline-block"
+              >
+                <p className="footer-text">{translations[language].footer.legacy}</p>
+                <div className="underline" />
+              </a>
             </div>
           </div>
         </div>
